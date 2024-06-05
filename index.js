@@ -9,7 +9,6 @@ env.config();
 const port = process.env.APPLICATION_PORT;
 const API_URL = process.env.API_URL;
 
-//Add your own bearer token from the previous lesson.
 const yourBearerToken = process.env.API_BEARER_TOKEN;
 const config = {
   headers: { Authorization: `Bearer ${yourBearerToken}` },
