@@ -3,6 +3,7 @@ import axios from "axios";
 import bodyParser from "body-parser";
 import env from "dotenv";
 
+//instance of the application
 const app = express();
 env.config();
 
