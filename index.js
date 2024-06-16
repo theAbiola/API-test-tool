@@ -7,6 +7,7 @@ import env from "dotenv";
 const app = express();
 env.config();
 
+//port instance 
 const port = process.env.APPLICATION_PORT;
 const API_URL = process.env.API_URL;
 
