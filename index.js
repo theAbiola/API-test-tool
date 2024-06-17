@@ -11,6 +11,7 @@ env.config();
 const port = process.env.APPLICATION_PORT;
 const API_URL = process.env.API_URL;
 
+//Bearer token instance encapsulated.
 const yourBearerToken = process.env.API_BEARER_TOKEN;
 const config = {
   headers: { Authorization: `Bearer ${yourBearerToken}` },
