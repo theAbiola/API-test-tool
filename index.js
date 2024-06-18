@@ -17,6 +17,7 @@ const config = {
   headers: { Authorization: `Bearer ${yourBearerToken}` },
 };
 
+//body-parser instance
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
