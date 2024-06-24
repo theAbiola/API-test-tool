@@ -21,6 +21,7 @@ const config = {
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
+  //here we render the content on the homepage
   res.render("index.ejs", { content: "Waiting for data..." });
 });
 
