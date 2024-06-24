@@ -28,6 +28,7 @@ app.get("/", (req, res) => {
 app.post("/get-secret", async (req, res) => {
   const searchId = req.body.id;
   try {
+    //we send a post request to the secrets endpoint using the searchId as the path parameter
     const result = await axios.get(API_URL + "/secrets/" + searchId, config);
     res.render("index.ejs", { content: JSON.stringify(result.data) });
   } catch (error) {
