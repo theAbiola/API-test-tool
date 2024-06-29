@@ -40,6 +40,7 @@ app.post("/post-secret", async (req, res) => {
   try {
     const result = await axios.post(API_URL + "/secrets", req.body, config);
     console.log(req.body);
+    // we collect the post and convert it into a JSON object to render it on the frontend
     res.render("index.ejs", { content: JSON.stringify(result.data) });
   } catch (error) {
     res.render("index.ejs", { content: JSON.stringify(error.response.data) });
