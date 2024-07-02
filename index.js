@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
   res.render("index.ejs", { content: "Waiting for data..." });
 });
 
+//the post route to get a particular secret
 app.post("/get-secret", async (req, res) => {
   const searchId = req.body.id;
   try {
