@@ -37,6 +37,7 @@ app.post("/get-secret", async (req, res) => {
   }
 });
 
+//post request to handle posting a new secret
 app.post("/post-secret", async (req, res) => {
   try {
     const result = await axios.post(API_URL + "/secrets", req.body, config);
